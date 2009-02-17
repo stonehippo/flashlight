@@ -1,0 +1,12 @@
+%html
+  %head
+    %title= "#{@app_name}"
+    %link{ :href =>  "/styles.css", :rel => "stylesheet", :type => "text/css" }
+  %body
+    #wrapper
+      #header
+        %h1= "#{@app_name}&mdash;#{@app_tagline}"
+      #content
+      != yield
+      #footer
+        %p Copyright &copy; 2009 Bit Group, Inc.
