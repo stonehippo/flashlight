@@ -1,0 +1,16 @@
+%form#login{ :action => "/login", :method => "post" }
+  %table
+    %tr
+      %td
+        %label{ :for => "email" } Email
+      %td
+        %input#email{ :type => "text", :name => "email" }
+    %tr
+      %td
+        %label{ :for => "password" } Password
+      %td
+        %input#password{ :type => "password", :name => "password" }
+    %tr
+      %td
+      %td
+        %input{ :type => "submit", :value => "Log in" }
